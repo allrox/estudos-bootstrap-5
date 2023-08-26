@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Alexandre Rocha, AllRox">
+    <meta name="description" content="Projeto do curso de Bootstrap5 Alura">
+    <meta name="keywords" content="AllRox, HTML, Bootstrap5, Alura, Front-end">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <title>Meteora</title>
+    <title>Meteora - Um exercício de Bootstrap5</title>
     <link rel="stylesheet" href="reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="main">
     
     <header>
         <nav class="navbar navbar-expand-md bg-black navbar-dark py-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><h1 class="m-0"><img class="d-block" src="/assets/logo-meteora.png" alt="Logo Meteora"></h1></a>
+                <a class="navbar-brand" href="#"><h1 class="m-0"><img class="d-block" src="./assets/logo-meteora.png" alt="Logo Meteora"></h1></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,18 +28,18 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lojas</a>
+                            <a class="nav-link" href="#categorias">Categorias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Novidades</a>
+                            <a class="nav-link" href="#destaques">Destaques</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promoção</a>
+                            <a class="nav-link" href="#comodidades">Comodidades</a>
                         </li>
                         
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o Produto" aria-label="Search">
+                        <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o Produto" aria-label="Pesquisar">
                         <button class="btn btn-outline-light rounded-0" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -76,157 +79,169 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Próximo</span>
             </button>
         </div>
-        
     </header>
     
     <!-- Seção Categorias -->
-    <section class="container row mx-auto g-4 mt-4">
+    <section class="container row mx-auto g-4 mt-4" id="categorias">
         <h2 class="text-center my-4">Categorias</h2>
         <div class="col-6 col-md-4 col-xxl-2">
             <div>
                 
             </div>
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="/assets/mobile/categorias/categoria-camiseta.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="/assets/tablet/categorias/categoria-camiseta.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="/assets/desktop/categorias/categoria-camiseta.png" alt="">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-camiseta.png" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-camiseta.png" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-camiseta.png" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho.">
                 <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Camisetas</p>
+                    <p class="text-center m-0">Camisetas</p>
                 </div>
             </div>
         </div>
         <div class="col-6 col-md-4 col-xxl-2">
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-bolsas.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-bolsas.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-bolsas.png" alt="">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-bolsas.png" alt="Bolsa feminina de couro na cor marrom, com cortes quadrados, e alça dourada em formato de corrente com detalhe verde, em fundo verde limão.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-bolsas.png" alt="Bolsa feminina de couro na cor marrom, com cortes quadrados, e alça dourada em formato de corrente com detalhe verde, em fundo verde limão.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-bolsas.png" alt="Bolsa feminina de couro na cor marrom, com cortes quadrados, e alça dourada em formato de corrente com detalhe verde, em fundo verde limão.">
                 <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Bolsas</p>
+                    <p class="text-center m-0">Bolsas</p>
                 </div>
             </div>
         </div>
         <div class="col-6 col-md-4 col-xxl-2">
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="/assets/mobile/categorias/categoria-calcados.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="/assets/tablet/categorias/categoria-calcados.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="/assets/desktop/categorias/categoria-calcados.png" alt="">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-calcados.png" alt="Par de tênis unissex com cor predominante branca e traços na cores laranja, azul, verde e cadarço vermelho, em fundo verde limão.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-calcados.png" alt="Par de tênis unissex com cor predominante branca e traços na cores laranja, azul, verde e cadarço vermelho, em fundo verde limão.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-calcados.png" alt="Par de tênis unissex com cor predominante branca e traços na cores laranja, azul, verde e cadarço vermelho, em fundo verde limão.">
                 <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Calçados</p>
+                    <p class="text-center m-0">Calçados</p>
                 </div>
             </div>
         </div>
         <div class="col-6 col-md-4 col-xxl-2">
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="/assets/mobile/categorias/categoria-calcas.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="/assets/tablet/categorias/categoria-calcas.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="/assets/desktop/categorias/categoria-calcas.png" alt="">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-calcas.png" alt="Quatro calças jeans dobradas e organizadas uma acima da outra, em fundo verde limão.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-calcas.png" alt="Quatro calças jeans dobradas e organizadas uma acima da outra, em fundo verde limão.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-calcas.png" alt="Quatro calças jeans dobradas e organizadas uma acima da outra, em fundo verde limão.">
                 <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Calças</p>
+                    <p class="text-center m-0">Calças</p>
                 </div>
             </div>
         </div>
         <div class="col-6 col-md-4 col-xxl-2">
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="/assets/mobile/categorias/categoria-casacos.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="/assets/tablet/categorias/categoria-casacos.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="/assets/desktop/categorias/categoria-casacos.png" alt="">                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Casacos</p>
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-casacos.png" alt="Casaco masculino na cor marrom em fundo verde limão.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-casacos.png" alt="Casaco masculino na cor marrom em fundo verde limão.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-casacos.png" alt="Casaco masculino na cor marrom em fundo verde limão.">                
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center m-0">Casacos</p>
                 </div>
             </div>
         </div>
         <div class="col-6 col-md-4 col-xxl-2">
             <div class="card rounded-0 border-0">
-                <img class="d-block d-md-none d-xl-none" src="/assets/mobile/categorias/categoria-oculos.png" alt="">
-                <img class="d-none d-md-block d-xl-none" src="/assets/tablet/categorias/categoria-oculos.png" alt="">
-                <img class="d-none d-md-none d-xl-block" src="/assets/desktop/categorias/categoria-oculos.png" alt="">                <div class="card-header bg-black text-bg-dark">
-                    <p class="text-center">Óculos</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    
-    <!-- Seção de Destaques -->
-    <section class="em-alta container row mx-auto g-4 mt-4">
-        <h2 class="text-center my-4">Produtos em Destaque</h2>
-        <div class="col-sm col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-md-6 col-xxl-4">
-            <div class="card">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <div class="card-body">
-                    <h5 class="card-title">Produto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>R$ 30,00</p>
-                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/categorias/categoria-oculos.png" alt="Óculos de Sol com lentes arredondadas e armação dourada, em fundo verde limão.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/categorias/categoria-oculos.png" alt="Óculos de Sol com lentes arredondadas e armação dourada, em fundo verde limão.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/categorias/categoria-oculos.png" alt="Óculos de Sol com lentes arredondadas e armação dourada, em fundo verde limão.">                
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center m-0">Óculos</p>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- Seção de Destaques -->
+    <div id="destaques"></div>
+    <h2 class="text-center my-4">Produtos em Destaque</h2>
+    <section class="container row mx-auto g-4 mt-4">
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/camiseta.png" alt="Modelo masculo vestindo touca preta, blusa marrom e calça jeans, com uma parede cinza de fundo.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/camiseta.png" alt="Modelo masculo vestindo touca preta, blusa marrom e calça jeans, com uma parede cinza de fundo.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/camiseta.png" alt="Modelo masculo vestindo touca preta, blusa marrom e calça jeans, com uma parede cinza de fundo.">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Conforto</h5>
+                    <p class="card-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+                    <p>R$ 70,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/calca.png" alt="Modelo feminina vestindo blusa marrom, calça bege, par de sapatos altos na cor branca, cordão e pulseira, em um ambiente aberto com chão de terra e matos secos.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/calca.png" alt="Modelo feminina vestindo blusa marrom, calça bege, par de sapatos altos na cor branca, cordão e pulseira, em um ambiente aberto com chão de terra e matos secos.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/calca.png" alt="Modelo feminina vestindo blusa marrom, calça bege, par de sapatos altos na cor branca, cordão e pulseira, em um ambiente aberto com chão de terra e matos secos.">
+                <div class="card-body">
+                    <h5 class="card-title">Calça Alfaiataria</h5>
+                    <p class="card-text">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+                    <p>R$ 180,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/tenis.png" alt="Foco nos pés de modelo usando par de tênis e meia na cor branca, e calça na cor preta, pisando em uma poça de água.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/tenis.png" alt="Foco nos pés de modelo usando par de tênis e meia na cor branca, e calça na cor preta, pisando em uma poça de água.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/tenis.png" alt="Foco nos pés de modelo usando par de tênis e meia na cor branca, e calça na cor preta, pisando em uma poça de água.">
+                <div class="card-body">
+                    <h5 class="card-title">Tênis Chunky</h5>
+                    <p class="card-text">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+                    <p>R$ 250,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/jaqueta-jeans.png" alt="Modelo masculino vestindo toca e calça na cor preta, jaqueta jeans azul, blusa branca e cordão dourado, em um fundo branco.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/jaqueta-jeans.png" alt="Modelo masculino vestindo toca e calça na cor preta, jaqueta jeans azul, blusa branca e cordão dourado, em um fundo branco.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/jaqueta-jeans.png" alt="Modelo masculino vestindo toca e calça na cor preta, jaqueta jeans azul, blusa branca e cordão dourado, em um fundo branco.">
+                <div class="card-body">
+                    <h5 class="card-title">Jaqueta Jeans</h5>
+                    <p class="card-text">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                    <p>R$ 150,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/oculos.png" alt="Modelo masculino com blusa branca e um par de óculos de lentes transparentes arredondadas, utilizando um notebook, com um cachorro poodle branco no seu colo, e em um fundo branco.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/oculos.png" alt="Modelo masculino com blusa branca e um par de óculos de lentes transparentes arredondadas, utilizando um notebook, com um cachorro poodle branco no seu colo, e em um fundo branco.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/oculos.png" alt="Modelo masculino com blusa branca e um par de óculos de lentes transparentes arredondadas, utilizando um notebook, com um cachorro poodle branco no seu colo, e em um fundo branco.">
+                <div class="card-body">
+                    <h5 class="card-title">Óculos Redondo</h5>
+                    <p class="card-text">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+                    <p>R$ 120,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <img class="d-block d-md-none d-xl-none" src="./assets/mobile/produtos/bolsa.png" alt="Cintura, pernas e pés de modelo feminina vestindo sobretudo de cor predominante bege com detalhes em tom vermelho e escuro, com calça e par de sapatos na cor preta, segurando bolsa na cor bege, com fundo de prédio.">
+                <img class="d-none d-md-block d-xl-none" src="./assets/tablet/produtos/bolsa.png" alt="Cintura, pernas e pés de modelo feminina vestindo sobretudo de cor predominante bege com detalhes em tom vermelho e escuro, com calça e par de sapatos na cor preta, segurando bolsa na cor bege, com fundo de prédio.">
+                <img class="d-none d-md-none d-xl-block" src="./assets/desktop/produtos/bolsa.png" alt="Cintura, pernas e pés de modelo feminina vestindo sobretudo de cor predominante bege com detalhes em tom vermelho e escuro, com calça e par de sapatos na cor preta, segurando bolsa na cor bege, com fundo de prédio.">
+                <div class="card-body">
+                    <h5 class="card-title">Bolsa coringa</h5>
+                    <p class="card-text">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+                    <p>R$ 120,00</p>
+                    <a class="btn btn-primary botao-lilas rounded-0 border-0">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Seção Comodidades -->
-    <section class="container-fluid bg-black text-bg-dark py-5 my-5">
+    <section id="comodidades" class="container-fluid bg-black text-bg-dark py-5 my-5">
         <h2 class="text-center">Conheça as nossas facilidades</h2>
         
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
@@ -257,18 +272,23 @@
         </div>
     </section>
     
-    <div class="w-50 mx-auto mb-5">
-        <form class="border border-secondary m-3 p-3 text-center">
+    <!-- Form Novidades -->
+    <div class="container mb-5">
+        <form class="box_novidades mx-auto border border-secondary m-3 p-3 text-center">
             <h5 class>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
             <div class="input-group my-3">
                 <input type="email" class="form-control border-secondary rounded-0" name="" id="" placeholder="Digite seu Email" aria-label="Digite seu Email" aria-describedby="button-addon2">
-                <button type="btn btn-primary" id="button-addon2">Enviar</button>
+                <button type="button" class="btn btn-primary botao-lilas rounded-0 border-0" id="button-addon2">Enviar</button>
             </div>
         </form>
     </div>
     
-    <footer class="text-center py-3 bg-black text-bg-dark">
-        <p>2023 &copy; Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+    <!-- Footer -->
+    <footer class="py-3 bg-black text-bg-dark ">
+        <div class="container text-center">
+            <p class="m-0">2023 &copy; Desenvolvido por Alura | Projeto fictício sem fins comerciais. </p><a href="#main" class="btn btn-primary botao-lilas rounded-5 border-0 mx-3 my-3">Voltar ao Topo</a>
+            
+        </div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

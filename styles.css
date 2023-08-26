@@ -1,5 +1,3 @@
-
-
 .texto-reduzido {
     font-size: .8rem;
 }
@@ -10,4 +8,24 @@
 
 .verde-limao {
     color: #DAFF01;
+}
+
+.box_novidades {
+    max-width: 60%;
+}
+
+@media (min-width: 400px) {
+
+    .box_novidades{
+        max-width: 350px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .box_novidades{
+        max-width: 80%;
+    }
+    
 }
